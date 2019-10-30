@@ -8,15 +8,21 @@
         <outputRelativeToContentRoot value="true" />
         <module name="core" />
         <module name="app" />
-        <module name="parent" />
         <module name="browser" />
+        <module name="demo" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="app" target="11" />
-      <module name="browser" target="11" />
+    <bytecodeTargetLevel target="11">
+      <module name="app" target="1.8" />
+      <module name="browser" target="1.8" />
       <module name="core" target="11" />
+      <module name="demo" target="11" />
       <module name="parent" target="11" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="demo" options="" />
+    </option>
   </component>
 </project>
