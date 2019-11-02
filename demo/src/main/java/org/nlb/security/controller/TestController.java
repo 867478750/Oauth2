@@ -53,18 +53,18 @@ public class TestController {
     @ResponseBody
     @GetMapping("/file")
     public String tt4(HttpServletRequest request, HttpServletResponse response) throws IOException {
-        response.setContentType("application/x-download");
-        response.setHeader("Content-Disposition","attachment;filename=data.txt");
-        try {
-            FileInputStream fileInputStream = new FileInputStream(new File("C:\\Users\\nlb\\Desktop\\rr.txt"));
-            byte[] bytes = fileInputStream.readAllBytes();
-            OutputStream outputStream = response.getOutputStream();
-            outputStream.write(bytes);
-            outputStream.flush();
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        }
-        return "ss";
+//        response.setContentType("application/x-download");
+//        response.setHeader("Content-Disposition","attachment;filename=data.txt");
+//        try {
+//            FileInputStream fileInputStream = new FileInputStream(new File("C:\\Users\\nlb\\Desktop\\rr.txt"));
+//            byte[] bytes = fileInputStream.readAllBytes();
+//            OutputStream outputStream = response.getOutputStream();
+//            outputStream.write(bytes);
+//            outputStream.flush();
+//        } catch (FileNotFoundException e) {
+//            e.printStackTrace();
+//        }
+       return "ss";
 
     }
 
