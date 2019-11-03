@@ -2,17 +2,19 @@ package org.nlb.security.controller;
 
 
 import org.apache.commons.lang.StringUtils;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.http.HttpStatus;
 import org.springframework.security.web.DefaultRedirectStrategy;
 import org.springframework.security.web.RedirectStrategy;
 import org.springframework.security.web.savedrequest.HttpSessionRequestCache;
 import org.springframework.security.web.savedrequest.RequestCache;
 import org.springframework.security.web.savedrequest.SavedRequest;
+import org.springframework.web.bind.ServletRequestBindingException;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
-
 import javax.imageio.ImageIO;
 import javax.servlet.ServletOutputStream;
 import javax.servlet.http.HttpServletRequest;
@@ -21,6 +23,7 @@ import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.util.Random;
+import java.util.concurrent.TimeUnit;
 
 /**
  * 为了满足restful风格，因为登录的页面是html，我们这里进行封装，是html页面跳转到html登录页面
@@ -30,6 +33,8 @@ import java.util.Random;
 @RestController
 public class SecurityController {
 
+    @Autowired
+    StringRedisTemplate redisTemplate;
     private RequestCache requestCache = new HttpSessionRequestCache();
     private RedirectStrategy redirectStrategy = new DefaultRedirectStrategy();
 
@@ -47,11 +52,11 @@ public class SecurityController {
     }
 
     @GetMapping("/login/image")
-    public void createImage(HttpServletRequest request, HttpServletResponse response) throws IOException {
-        Graphics graphics = genImage(response);
+    public void createImage(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletRequestBindingException {
+        String remoteAddr = request.getRemoteAddr();
+        Graphics graphics = genImage(response,remoteAddr);
     }
-
-    private Graphics genImage(HttpServletResponse response) throws IOException {
+    private Graphics genImage(HttpServletResponse response,String remoteAddr) throws IOException, ServletRequestBindingException {
         response.setContentType("image/jpeg");
         response.setHeader("Pragma", "No-cache");
         response.setHeader("Cache-Control", "no-cache");
@@ -97,12 +102,9 @@ public class SecurityController {
         //以下关闭输入流！
         responseOutputStream.flush();
         responseOutputStream.close();
-        System.out.println(sRand);
+        redisTemplate.opsForValue().set("code"+remoteAddr,sRand,60, TimeUnit.SECONDS);
         return g;
     }
-
-
-
     Color getRandColor(int fc,int bc){//给定范围获得随机颜色
         Random random = new Random();
         if(fc>255) fc=255;

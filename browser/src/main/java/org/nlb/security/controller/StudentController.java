@@ -43,14 +43,4 @@ public class StudentController {
         return "success";
     }
 
-    @ResponseBody
-    @GetMapping("/success")
-    public String seccessLogin(){
-        return "成功";
-    }
-
-
-
-
-
 }

@@ -2,31 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9266294f-7749-4668-ba86-fcaf283f5ede" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/browser/browser.iml" beforeDir="false" afterPath="$PROJECT_DIR$/browser/browser.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/browser/src/main/java/org/nlb/security/controller/SecurityController.java" beforeDir="false" afterPath="$PROJECT_DIR$/browser/src/main/java/org/nlb/security/controller/SecurityController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/browser/src/main/java/org/nlb/security/controller/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/browser/src/main/java/org/nlb/security/controller/StudentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/browser/src/main/java/org/nlb/security/entity/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/browser/src/main/java/org/nlb/security/entity/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/browser/src/main/java/org/nlb/security/service/StudentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/browser/src/main/java/org/nlb/security/service/StudentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/demo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/demo/demo.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/browser/src/main/java/org/nlb/security/utils/StudentServiceUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/browser/src/main/java/org/nlb/security/utils/StudentServiceUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/browser/src/main/java/org/nlb/security/utils/picture/StudentLoginPicture.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/browser/target/classes/org/nlb/security/controller/SecurityController.class" beforeDir="false" afterPath="$PROJECT_DIR$/browser/target/classes/org/nlb/security/controller/SecurityController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/browser/target/classes/org/nlb/security/utils/StudentServiceUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/browser/target/classes/org/nlb/security/utils/StudentServiceUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/browser/target/classes/org/nlb/security/utils/picture/StudentLoginPicture.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/demo/src/main/java/org/nlb/security/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/org/nlb/security/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/org/nlb/security/config/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/org/nlb/security/config/WebConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/org/nlb/security/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/org/nlb/security/controller/TestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/org/nlb/security/util/MyHander.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/org/nlb/security/util/MyHander.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/org/nlb/security/yy.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/org/nlb/security/yy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/demo/target/classes/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo/target/classes/org/nlb/security/config/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo/target/classes/org/nlb/security/config/SecurityConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/target/classes/org/nlb/security/config/WebConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo/target/classes/org/nlb/security/config/WebConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/target/classes/org/nlb/security/controller/TestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo/target/classes/org/nlb/security/controller/TestController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/target/classes/org/nlb/security/entity/User$UserDetailView.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo/target/classes/org/nlb/security/entity/User$UserDetailView.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/target/classes/org/nlb/security/entity/User$UserSimpleView.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo/target/classes/org/nlb/security/entity/User$UserSimpleView.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/target/classes/org/nlb/security/entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo/target/classes/org/nlb/security/entity/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/target/classes/org/nlb/security/util/MyFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo/target/classes/org/nlb/security/util/MyFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/target/classes/org/nlb/security/util/MyHander.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo/target/classes/org/nlb/security/util/MyHander.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/target/classes/org/nlb/security/yy.class" beforeDir="false" afterPath="$PROJECT_DIR$/demo/target/classes/org/nlb/security/yy.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -102,12 +89,12 @@
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.scala.compiler.ScalaCompileServerForm" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\nlb\Desktop\security\demo\src\main\java\org\nlb\security\util" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\nlb\Desktop\security\browser\src\main\resources\static" />
       <recent name="C:\Users\nlb\Desktop\security\browser\src\main\resources" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\nlb\Desktop\security\demo\src\main\java\org\nlb\security\util" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -196,12 +183,12 @@
           <expand>
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@3eeff448" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@80f9d2f7" type="7427dc5b:ServiceModel$ServiceGroupNode" />
             </path>
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@3eeff448" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@75c6b881" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@80f9d2f7" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@3d7060e8" type="7427dc5b:ServiceModel$ServiceGroupNode" />
             </path>
           </expand>
           <select />
@@ -246,7 +233,9 @@
       <workItem from="1572593533423" duration="364000" />
       <workItem from="1572601670177" duration="13927000" />
       <workItem from="1572661688233" duration="5462000" />
-      <workItem from="1572667750550" duration="8597000" />
+      <workItem from="1572667750550" duration="8890000" />
+      <workItem from="1572676722035" duration="6723000" />
+      <workItem from="1572754103201" duration="4079000" />
     </task>
     <servers />
   </component>
