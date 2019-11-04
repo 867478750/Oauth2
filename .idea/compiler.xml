@@ -13,11 +13,11 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8">
-      <module name="app" target="8" />
-      <module name="browser" target="8" />
-      <module name="core" target="8" />
-      <module name="demo" target="8" />
-      <module name="parent" target="8" />
+      <module name="app" target="1.8" />
+      <module name="browser" target="1.8" />
+      <module name="core" target="11" />
+      <module name="demo" target="11" />
+      <module name="parent" target="11" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">

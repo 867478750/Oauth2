@@ -1,7 +1,7 @@
 package org.nlb.security.utils.picture;
 
 import org.apache.commons.lang.StringUtils;
-import org.nlb.security.utils.returnLogin.FailureLogin;
+import org.nlb.security.returnLogin.FailureLogin;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.web.bind.ServletRequestBindingException;

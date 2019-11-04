@@ -6,6 +6,7 @@ import org.nlb.security.utils.EnconderPassword;
 import org.nlb.security.utils.SHA256;
 import org.nlb.security.utils.StudentServiceUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
 import java.io.UnsupportedEncodingException;
@@ -41,6 +42,12 @@ public class StudentController {
     public String createStudent(Student student) throws UnsupportedEncodingException, NoSuchAlgorithmException {
         studentService.insertStudentByStudent(student);
         return "success";
+    }
+
+    @RequestMapping("/sessionInvalidate")
+    @ResponseStatus(HttpStatus.FORBIDDEN)
+    public String sessionInvalidate(){
+        return "session";
     }
 
 }

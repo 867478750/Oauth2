@@ -1,11 +1,8 @@
 package org.nlb.security.entity;
 
-import org.springframework.security.core.GrantedAuthority;
-import org.springframework.security.core.userdetails.UserDetails;
+import java.io.Serializable;
 
-import java.util.Collection;
-
-public class Student {
+public class Student implements Serializable {
     private int id;
     private String ext;
     private String password;
